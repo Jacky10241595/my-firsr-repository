@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // Math.max:可求任意个数字的最大值
+    // 第一遍
+    function max() {
+        var a = arguments[0];
+        for (var i = 0; i < arguments.length; i++) {
+            if (a < arguments[i]) {
+                a = arguments[i];
+            }
+        }
+        return a;
+    }
+
+    // 第二遍
+    function max() {
+        var n = arguments[0];
+        for (var i = 0; i < arguments.length; i++) {
+            if (n < arguments[i]) {
+                n = arguments[i];
+            }
+        }
+        return n;
+    }
+
+    // 第三遍
+    function max(){
+        var num=arguments[0];
+        for(var i=0;i<arguments.length;i++){
+            if(num<arguments[i]){
+                num=arguments[i]
+            }
+        }
+        return num;
+    }
+</script>
+
+</html>

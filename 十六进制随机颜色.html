@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    // 第一遍
+    // 思路:随机0-15之间的整数,转换为16进制数字,再拼接为颜色格式
+    function randomColor() {
+        var color = 'a';
+        for (var i = 0; i < 6; i++) {
+            var number = Math.floor(Math.random() * 16);
+            color += number.toString(16);//16指转换为16进制
+        }//toString将数组转换为字符串
+        return color;
+    }
+    console.log(randomColor());
+
+    // 第二遍
+    // 思路:随机0-15之间的整数,转换为16进制数字
+    function randomColor() {
+        var color = 'c';
+        for (var i = 0; i < 6; i++) {
+            var n = Math.floor(Math.random() * 16);
+            color += n.toString(16);
+        }
+        return color;
+    }
+    console.log(randomColor);
+
+    // 第三遍
+    function randomColor() {
+        var color='#';
+        for(var i=0;i<6;i++){
+            var number=Math.floor(Math.random()*16);
+            color+=number.toString(16);
+        }return color;
+      }
+      console.log(randomColor);
+</script>
+
+</html>

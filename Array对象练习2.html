@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 1.push:将一个或多个元素从数组尾部插入
+    // var arr = ['a', 'b', 'c'];
+    // arr.push('c', 'd', 'e');
+    // console.log(arr);
+
+    // 2.pop:将数组中最后一个元素移除
+    // var arr=[1,2,3,4,5];
+    // arr.pop();
+    // console.log(arr);
+
+    // 3.unshift:将一个或多个元素从数组第一个位置插入
+    // var arr=[1,2,3];
+    // arr.unshift('a','b','c');
+    // console.log(arr);
+
+    // 4.shift:将第一个元素移除
+    // var arr=[1,2,3,4,5];
+    // arr.shift();
+    // console.log(arr);
+
+    // 5.filter:将数组中满足条件的元素筛选出
+    // 要求:从数组中选出 小于10 得数
+    // var arr=[12,23,45,3,7,8];
+    // var arr2=arr.filter(function(e,i){
+    //     return e<10;
+    // })
+    // console.log(arr2);
+
+    // 6.forEach:可遍历数组
+    // var arr=['a','b','c','d'];
+    // arr.forEach(function(e,i){
+    //     console.log(e,i);
+    // })
+
+    // 7.splice:可在数组中的指定位置插入.移除.替换元素
+    var arr = [1, 2, 3, 4, 5];
+    // 将3 4 元素移除
+    // arr.splice(2,2)//第一个2指索引,第二个2指移除的个数
+    // console.log(arr);
+    //在元素2的后面添加a,b两个元素
+    // arr.splice(2,0,'a','b');//2指索引2开始,移除0个,添加a,b
+    // console.log(arr);
+    // 将3,4替换成a,b
+    arr.splice(2, 2, 'a', 'b');//在索引2替换,换2个,加入a,b
+    console.log(arr);
+</script>
+
+</html>

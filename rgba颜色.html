@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="颜色" id="sjcolor">
+</body>
+<script>
+// 封装一个能获得随机区间的随机整数的函数
+function randomInt(n,m){
+    return Math.floor(Math.random()*(m-n+1)+n);
+}
+// 封装可获得随机颜色的函数
+function randomColor(){
+    var r=randomInt(0,255);
+    var g=randomInt(0,255);
+    var b=randomInt(0,255);
+    var opacity=Math.floor(Math.random()*100)/100;
+    // 拼接成rgba颜色
+    return 'rgba('+r+','+g+','+b+','+opacity+')';
+}
+// 获取元素,注册事件,在事件的处理程序中实现随机颜色
+var bgc=document.getElementById('sjcolor');
+bgc.onclick=function(){
+    document.body.style.backgroundColor=randomColor();
+}
+</script>
+</html>
